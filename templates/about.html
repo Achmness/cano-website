@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About - Gym Gear Hub</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="brand">Gym Gear Hub</div>
+            <ul>
+                <li><a href="/home">Home</a></li>
+                <li><a href="/shop">Shop</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about-section">
+            <h2>About Gym Gear Hub</h2>
+            <p>
+                Welcome to <strong>Gym Gear Hub</strong> — your ultimate destination for quality fitness equipment.
+                We believe that everyone deserves access to the best tools to help achieve their health and fitness goals.
+            </p>
+
+            <p>
+                From home gym essentials to professional-grade machines, we offer a wide selection of products
+                designed to support strength training, cardio, and overall wellness.
+            </p>
+
+            <p>
+                Our mission is to make fitness accessible to everyone by providing durable, affordable,
+                and high-performance gym equipment that fits your lifestyle.
+            </p>
+
+            <div class="about-image">
+                <img src="{{ url_for('static', filename='images/about.jpg') }}" alt="Gym Equipment">
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Gym Gear Hub. All rights reserved.</p>
+    </footer>
+</body>
+</html>

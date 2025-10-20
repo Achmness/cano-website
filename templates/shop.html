@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shop - Gym Gear Hub</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="brand">Gym Gear Hub</div>
+            <ul>
+                <li><a href="/home">Home</a></li>
+                <li><a href="/shop">Shop</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CRITICAL WRAPPER FOR STICKY FOOTER -->
+    <div class="main-content-wrapper">
+        <main>
+            <section class="shop-section">
+                <div class="shop-columns">
+
+                    <!-- Strength Training -->
+                    <div class="category">
+                        <h2>Strength Training</h2>
+
+                        <!-- Row 1 -->
+                        <div class="product-row">
+                            <div class="product">
+                                <img src="{{ url_for('static', filename='images/dumbell.jpg') }}" alt="Dumbbell">
+                                <h3>Dumbbell Set</h3>
+                                <button>Add to Cart</button>
+                            </div>
+                            <div class="product">
+                                <img src="{{ url_for('static', filename='images/bench.png') }}" alt="Bench">
+                                <h3>Workout Bench</h3>
+                                <button>Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <!-- Row 2 -->
+                        <div class="product-row">
+                            <div class="product">
+                                <img src="{{ url_for('static', filename='images/barbell.jpg') }}" alt="Barbell">
+                                <h3>Barbell Set</h3>
+                                <button>Add to Cart</button>
+                            </div>
+                            <div class="product">
+                                <img src="{{ url_for('static', filename='images/belt.png') }}" alt="Lifting">
+                                <h3>Lifting Belt</h3>
+                                <button>Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <!-- Row 3: Ankle Weight and Hand Grip -->
+                        <div class="product-row">
+                            <div class="product">
+                                <img src="{{ url_for('static', filename='images/ankle.jpg') }}" alt="Ankle">
+                                <h3>Ankle Weight</h3>
+                                <button>Add to Cart</button>
+                            </div>
+                            <div class="product">
+                                <img src="{{ url_for('static', filename='images/hand.jpg') }}" alt="Hand">
+                                <h3>Hand Grip</h3>
+                                <button>Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cardio -->
+                    <div class="category">
+                        <h2>Cardio</h2>
+
+                        <!-- Row 1 -->
+                        <div class="product-row">
+                            <div class="product">
+                                <img src="{{ url_for('static', filename='images/treads.jpg') }}" alt="Treadmill">
+                                <h3>Treadmill</h3>
+                                <button>Add to Cart</button>
+                            </div>
+                            <div class="product">
+                                <img src="{{ url_for('static', filename='images/bike.png') }}" alt="Exercise Bike">
+                                <h3>Exercise Bike</h3>
+                                <button>Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <!-- Row 2 -->
+                        <div class="product-row">
+                            <div class="product">
+                                <img src="{{ url_for('static', filename='images/rope.png') }}" alt="Jump Rope">
+                                <h3>Jump Rope</h3>
+                                <button>Add to Cart</button>
+                            </div>
+                            <div class="product">
+                                <img src="{{ url_for('static', filename='images/ellip.png') }}" alt="Elliptical">
+                                <h3>Elliptical Trainer</h3>
+                                <button>Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <!-- Row 3: Stair Stepper and Rowing Machine -->
+                        <div class="product-row">
+                            <div class="product">
+                                <img src="{{ url_for('static', filename='images/step.webp') }}" alt="Stair">
+                                <h3>Stair Stepper</h3>
+                                <button>Add to Cart</button>
+                            </div>
+                            <div class="product">
+                                <img src="{{ url_for('static', filename='images/row.webp') }}" alt="Rowing">
+                                <h3>Rowing Machine</h3>
+                                <button>Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 Gym Gear Hub. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+</html>

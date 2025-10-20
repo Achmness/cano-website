@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gym Equipments Shop</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="brand">Gym Gear Hub</div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/shop">Shop</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-content-wrapper">
+        <main class="container">
+            <section class="featured-products">
+                <h2>Featured Products</h2>
+                <div class="product-container">
+                    <div class="product">
+                        <img src="{{ url_for('static', filename='images/dumbell.jpg') }}" alt="Dumbbell Set" />
+                        <h3>Dumbbell Set</h3>
+                        <p>High-quality adjustable dumbbells perfect for home workouts.</p>
+                        <button>Add to Cart</button>
+                    </div>
+
+                    <div class="product">
+                        <img src="{{ url_for('static', filename='images/treads.jpg') }}" alt="Treadmill" />
+                        <h3>Treadmill</h3>
+                        <p>Durable treadmill with digital display and speed control.</p>
+                        <button>Add to Cart</button>
+                    </div>
+
+                    <div class="product">
+                        <img src="{{ url_for('static', filename='images/mat.png') }}" alt="Yoga Mat" />
+                        <h3>Yoga Mat</h3>
+                        <p>Non-slip eco-friendly yoga mat for flexibility and balance.</p>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2025 Gym Gear Hub. All rights reserved.</p>
+    </footer>
+</body>
+</html>
