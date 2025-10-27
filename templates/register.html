@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login | Gym Gear Hub</title>
+    <title>Register | Gym Gear Hub</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
 </head>
 <body>
@@ -26,8 +26,18 @@
     <div class="main-content-wrapper">
         <section class="auth-section" style="display: flex; justify-content: center; align-items: center; min-height: 80vh;">
             <div class="auth-container" style="background-color: #000; border: 2px solid #04bb4d; border-radius: 15px; padding: 40px; width: 100%; max-width: 400px; text-align: left; box-shadow: 0 0 15px rgba(4,187,77,0.3);">
-                <h2 style="text-align:center; color:#04bb4d;">Login</h2>
-                <form action="/login" method="POST" class="auth-form">
+                <h2 style="text-align:center; color:#04bb4d;">Register</h2>
+                <form action="/register" method="POST" class="auth-form">
+                    <div class="input-group" style="margin-bottom:15px;">
+                        <label for="full-name" style="color:#04bb4d;">Full Name</label>
+                        <input type="text" id="full-name" name="full_name" required style="width:100%; padding:10px; border-radius:5px; border:1px solid #04bb4d; background:#111; color:white;">
+                    </div>
+
+                    <div class="input-group" style="margin-bottom:15px;">
+                        <label for="email" style="color:#04bb4d;">Email</label>
+                        <input type="email" id="email" name="email" required style="width:100%; padding:10px; border-radius:5px; border:1px solid #04bb4d; background:#111; color:white;">
+                    </div>
+
                     <div class="input-group" style="margin-bottom:15px;">
                         <label for="username" style="color:#04bb4d;">Username</label>
                         <input type="text" id="username" name="username" required style="width:100%; padding:10px; border-radius:5px; border:1px solid #04bb4d; background:#111; color:white;">
@@ -38,10 +48,10 @@
                         <input type="password" id="password" name="password" required style="width:100%; padding:10px; border-radius:5px; border:1px solid #04bb4d; background:#111; color:white;">
                     </div>
 
-                    <button type="submit" class="btn-submit" style="width:100%; background-color:#04bb4d; color:#000; padding:10px; border:none; border-radius:5px; font-weight:bold; cursor:pointer;">Login</button>
+                    <button type="submit" class="btn-submit" style="width:100%; background-color:#04bb4d; color:#000; padding:10px; border:none; border-radius:5px; font-weight:bold; cursor:pointer;">Register</button>
 
-                    <p style="text-align:center; margin-top:15px;">Don't have an account?
-                        <a href="/register" style="color:#04bb4d; text-decoration:none;">Register here</a>
+                    <p style="text-align:center; margin-top:15px;">Already have an account?
+                        <a href="/login" style="color:#04bb4d; text-decoration:none;">Login here</a>
                     </p>
                 </form>
             </div>
